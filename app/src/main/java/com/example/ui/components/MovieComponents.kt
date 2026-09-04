@@ -37,7 +37,7 @@ fun MovieCard(
 ) {
     Card(
         modifier = modifier
-            .width(135dp)
+            .width(135.dp)
             .padding(4.dp)
             .clickable { onClick() }
             .testTag("movie_card_${movie.slug}"),
@@ -48,7 +48,7 @@ fun MovieCard(
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(200dp)
+                    .height(200.dp)
                     .clip(RoundedCornerShape(8.dp))
             ) {
                 // Movie Poster Image
@@ -174,7 +174,7 @@ fun FeaturedMovieBanner(
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .height(380dp)
+            .height(380.dp)
     ) {
         // Hero Background Poster
         AsyncImage(
@@ -242,7 +242,7 @@ fun FeaturedMovieBanner(
                     colors = ButtonDefaults.buttonColors(containerColor = BrandRed),
                     shape = RoundedCornerShape(6.dp),
                     modifier = Modifier
-                        .width(130dp)
+                        .width(130.dp)
                         .testTag("featured_play_button")
                 ) {
                     Icon(
@@ -261,7 +261,7 @@ fun FeaturedMovieBanner(
                     colors = ButtonDefaults.buttonColors(containerColor = Color.DarkGray),
                     shape = RoundedCornerShape(6.dp),
                     modifier = Modifier
-                        .width(130dp)
+                        .width(130.dp)
                         .testTag("featured_info_button")
                 ) {
                     Icon(

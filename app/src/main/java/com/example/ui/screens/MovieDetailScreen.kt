@@ -65,7 +65,7 @@ fun MovieDetailScreen(
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(280dp)
+                .height(280.dp)
         ) {
             AsyncImage(
                 model = ImageRequest.Builder(LocalContext.current)
@@ -96,14 +96,14 @@ fun MovieDetailScreen(
             IconButton(
                 onClick = onBackClick,
                 modifier = Modifier
-                    .padding(top = 40dp, start = 16dp)
+                    .padding(top = 40.dp, start = 16.dp)
                     .clip(RoundedCornerShape(50))
                     .background(Color.Black.copy(alpha = 0.6f))
                     .align(Alignment.TopStart)
                     .testTag("detail_back_button")
             ) {
                 Icon(
-                    imageVector = Icons.AutoMirrored.Default.ArrowBack,
+                    imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                     contentDescription = "Back",
                     tint = Color.White
                 )
@@ -185,7 +185,7 @@ fun MovieDetailScreen(
                     shape = RoundedCornerShape(8.dp),
                     modifier = Modifier
                         .weight(1f)
-                        .height(48dp)
+                        .height(48.dp)
                         .testTag("detail_play_button")
                 ) {
                     Icon(Icons.Default.PlayArrow, contentDescription = "Play", tint = Color.White)
@@ -206,8 +206,8 @@ fun MovieDetailScreen(
                     ),
                     shape = RoundedCornerShape(8.dp),
                     modifier = Modifier
-                        .width(130dp)
-                        .height(48dp)
+                        .width(130.dp)
+                        .height(48.dp)
                         .testTag("detail_bookmark_button")
                 ) {
                     Icon(

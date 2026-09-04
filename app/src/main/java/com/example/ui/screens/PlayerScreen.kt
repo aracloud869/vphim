@@ -168,7 +168,7 @@ fun PlayerScreen(
                     .testTag("player_back_button")
             ) {
                 Icon(
-                    imageVector = Icons.AutoMirrored.Default.ArrowBack,
+                    imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                     contentDescription = "Quay lại",
                     tint = Color.White
                 )
@@ -197,7 +197,7 @@ fun PlayerScreen(
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(240dp)
+                .height(240.dp)
                 .background(Color.Black)
         ) {
             AndroidView(

@@ -22,7 +22,7 @@ val AccentRedLight = Color(0xFFFF3344)
 
 private val CinemaColorScheme = darkColorScheme(
     primary = BrandRed,
-    onPrimary = Color.white,
+    onPrimary = Color.White,
     secondary = DarkSurfaceVariant,
     onSecondary = TextPrimary,
     background = DarkBackground,
@@ -90,5 +90,3 @@ fun VePhimTheme(
     )
 }
 
-// Quick extensions for Color
-val Color.Companion.white get() = Color(0xFFFFFFFF)

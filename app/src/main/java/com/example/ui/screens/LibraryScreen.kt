@@ -70,10 +70,12 @@ fun LibraryScreen(
             containerColor = Color.Transparent,
             contentColor = BrandRed,
             indicator = { tabPositions ->
-                SecondaryTabRowDefaults.Indicator(
-                    modifier = Modifier.tabIndicatorOffset(tabPositions[selectedTab]),
-                    color = BrandRed
-                )
+                if (selectedTab < tabPositions.size) {
+                    TabRowDefaults.SecondaryIndicator(
+                        modifier = Modifier.tabIndicatorOffset(tabPositions[selectedTab]),
+                        color = BrandRed
+                    )
+                }
             },
             modifier = Modifier.fillMaxWidth().testTag("library_tab_row")
         ) {
@@ -232,7 +234,7 @@ fun WatchHistoryItemRow(
         colors = CardDefaults.cardColors(containerColor = DarkSurfaceVariant),
         modifier = Modifier
             .fillMaxWidth()
-            .height(100dp)
+            .height(100.dp)
             .clickable { onPlayClick() }
     ) {
         Row(modifier = Modifier.fillMaxSize()) {
@@ -245,7 +247,7 @@ fun WatchHistoryItemRow(
                 contentDescription = item.movieName,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
-                    .width(70dp)
+                    .width(70.dp)
                     .fillMaxHeight()
             )
 

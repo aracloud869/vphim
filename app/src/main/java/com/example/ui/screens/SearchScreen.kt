@@ -69,10 +69,12 @@ fun SearchScreen(
                     }
                 }
             },
-            colors = TextFieldDefaults.outlinedTextFieldColors(
+            colors = OutlinedTextFieldDefaults.colors(
                 focusedBorderColor = BrandRed,
                 unfocusedBorderColor = Color.DarkGray,
-                containerColor = DarkSurfaceVariant
+                focusedContainerColor = DarkSurfaceVariant,
+                unfocusedContainerColor = DarkSurfaceVariant,
+                cursorColor = BrandRed
             ),
             shape = RoundedCornerShape(12.dp),
             singleLine = true,
