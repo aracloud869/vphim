@@ -1,0 +1,6 @@
+{
+  "name": "VePhim",
+  "description": "A beautiful, premium native Android movie streaming application built using Kotlin, Jetpack Compose, ExoPlayer, and Room local database.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
